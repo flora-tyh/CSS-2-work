@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1575198032357'); /* IE9 */
+  src: url('iconfont.eot?t=1575198032357#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPsAAsAAAAACAAAAAOgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDaIM0ATYCJAMMCwgABCAFhG0HNxv7BsgekiQqAgUU5MGioFCACL7GXvfdXQjR8vgoUImLipBUQFVZV2GqCYSOjapiI/4P72kvm9OVzkkTXSRtVi7NhJyIv/n+oD9JCRAk5PNcjm8kPn/bclmbxl7PDwOMAwp0L4vGEiyjnANpGLvyIvYTqDdsJuQwPbcUfBTGsEBckiYd+KRsSk1zqBWqS+aWbWQleKpNL90uAa/8z8d/WA8fkqrMOOjoIs0Iib8Ez8a79//vV5sZYMbzgC0iYxEoxFmp75R7mFvkrl4xe9RXVytCGiv5/z/w1aq1eqU/vERUMxobwSzMJ3612zKCX+N5Cee/iGrU4A1wh1id3xiq+zmcNY5Y1MUxbWAOLxYZ14rW9ovxdUuOMBKCu2QLs1nHINtGl5zWItvHFo+ouKmH6dEz18aXXyvffHz6ehR9iKw/zByRMgjr3bRDV4eu3hSvvbp11WBYckiMMMjag6LSK/olj0+uX5dghbnONRGvrp6/gbVkcNIxdb/sSmnpOqiA3sbqqnry9As3IIxk/eTFIl40svt7aGi7TCBfSBDjhBWShWZyoVwgaw8L+9H0QfFR5jqAzx8G8PZh0KVEGwLwpb8X9+zG67zCKvlp6VF2D5rAG+DXA/w80KY8AOcPrt2Pz0S5V7MqAzxUGT+qkxDigjvBAZonHhyCVZ7fKW75MJ4G36iUCepWpZWT6VNRIaGTNfL0OHOjr6yfc4ojSuRkKkhNFyuj2OXX6/nCg1u6fm2dMCz2ITxzvH4L1S2KJk7GND/B8nOqVjFoBKj8zmPurIpR6Ct73ZlfepyW7rxVDdzYr7WsAu7rxgp9fbsAqL1hf/ADPWXPf8PlsVfVQXsuskmtWo9nT/wkTwIquUsFhdrd62/pGl3tBmp1xUhqDCGrNUkU1iKqNNhEtVo7qLcgY3GDDhR3Ueowbx5AaHUCSbMfyFpdJgrrLqp0e4tqreGOeschXLPBdJBoCoXraNyI6Tsw0uCwE5aTRoPmYtzUYtVRSZ3PLscpF5nEgvwDs8UM3I5TY0xwtZqCaZrACMphw9LBYbjV6sCclKMJN9D+Zpp2RgcEEGVn8jc4bIA6QMHp0HBGGL0OGJKBgx3htqehufcXw5m0sNKhahgV+XI4igvZPSaIv8AWRIbZ3opxLae4tDIJRqMRMASKgw0mHXhwVjPngHGW92qCM6D5M/fIOEULQK2Itmb/+a2259sB9Ywtc6TIUZQLq6PNq5PsaNHZAQA=') format('woff2'),
+  url('iconfont.woff?t=1575198032357') format('woff'),
+  url('iconfont.ttf?t=1575198032357') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1575198032357#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-flow:before {
+  content: "\e612";
+}
+
+.icon-ziyuan:before {
+  content: "\e622";
+}
+

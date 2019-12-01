@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@font-face {font-family: "iconfont";
+    src: url('iconfont.eot?t=1575198032357'); /* IE9 */
+    src: url('iconfont.eot?t=1575198032357#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPsAAsAAAAACAAAAAOgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDaIM0ATYCJAMMCwgABCAFhG0HNxv7BsgekiQqAgUU5MGioFCACL7GXvfdXQjR8vgoUImLipBUQFVZV2GqCYSOjapiI/4P72kvm9OVzkkTXSRtVi7NhJyIv/n+oD9JCRAk5PNcjm8kPn/bclmbxl7PDwOMAwp0L4vGEiyjnANpGLvyIvYTqDdsJuQwPbcUfBTGsEBckiYd+KRsSk1zqBWqS+aWbWQleKpNL90uAa/8z8d/WA8fkqrMOOjoIs0Iib8Ez8a79//vV5sZYMbzgC0iYxEoxFmp75R7mFvkrl4xe9RXVytCGiv5/z/w1aq1eqU/vERUMxobwSzMJ3612zKCX+N5Cee/iGrU4A1wh1id3xiq+zmcNY5Y1MUxbWAOLxYZ14rW9ovxdUuOMBKCu2QLs1nHINtGl5zWItvHFo+ouKmH6dEz18aXXyvffHz6ehR9iKw/zByRMgjr3bRDV4eu3hSvvbp11WBYckiMMMjag6LSK/olj0+uX5dghbnONRGvrp6/gbVkcNIxdb/sSmnpOqiA3sbqqnry9As3IIxk/eTFIl40svt7aGi7TCBfSBDjhBWShWZyoVwgaw8L+9H0QfFR5jqAzx8G8PZh0KVEGwLwpb8X9+zG67zCKvlp6VF2D5rAG+DXA/w80KY8AOcPrt2Pz0S5V7MqAzxUGT+qkxDigjvBAZonHhyCVZ7fKW75MJ4G36iUCepWpZWT6VNRIaGTNfL0OHOjr6yfc4ojSuRkKkhNFyuj2OXX6/nCg1u6fm2dMCz2ITxzvH4L1S2KJk7GND/B8nOqVjFoBKj8zmPurIpR6Ct73ZlfepyW7rxVDdzYr7WsAu7rxgp9fbsAqL1hf/ADPWXPf8PlsVfVQXsuskmtWo9nT/wkTwIquUsFhdrd62/pGl3tBmp1xUhqDCGrNUkU1iKqNNhEtVo7qLcgY3GDDhR3Ueowbx5AaHUCSbMfyFpdJgrrLqp0e4tqreGOeschXLPBdJBoCoXraNyI6Tsw0uCwE5aTRoPmYtzUYtVRSZ3PLscpF5nEgvwDs8UM3I5TY0xwtZqCaZrACMphw9LBYbjV6sCclKMJN9D+Zpp2RgcEEGVn8jc4bIA6QMHp0HBGGL0OGJKBgx3htqehufcXw5m0sNKhahgV+XI4igvZPSaIv8AWRIbZ3opxLae4tDIJRqMRMASKgw0mHXhwVjPngHGW92qCM6D5M/fIOEULQK2Itmb/+a2259sB9Ywtc6TIUZQLq6PNq5PsaNHZAQA=') format('woff2'),
+    url('iconfont.woff?t=1575198032357') format('woff'),
+    url('iconfont.ttf?t=1575198032357') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('iconfont.svg?t=1575198032357#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 1.2rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.head { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 3.2rem;
+    background: #333949;
+    color: #fff;
+} 
+
+.head-left {
+    width: 10%;
+    padding-left: .8rem;
+} 
+
+.title {
+    width: 75%;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: .05rem;
+    font-size: 1.2rem;
+    /* padding-left: 1.2rem; */
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 9rem;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner ul {
+    position: absolute;
+    right: 1rem;
+    bottom: .5rem;
+    display: flex;
+    flex-direction: row;
+    z-index: 5;
+}
+
+.swiper {
+    width: .6rem;
+    height: .6rem;
+    margin-right: .5rem;
+    border-radius: 50%;
+    background-color: rgba(212, 209, 209, 0.6);
+}
+
+.current-swiper {
+    background-color: rgba(212, 209, 209);
+}
+
+.tags {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tag {
+    width: 7.81rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag p {
+    width: 6rem;
+    height: 2rem;
+    border: 1px solid rgba(219, 219, 219, 0.705);
+    border-radius: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+    font-size: .9rem;
+}
+
+.tag-current {
+    background-color: #f54759;
+    color: #fff;
+}
+
+</style>    
+</head>
+<body>
+  <div class="head">
+    <div class="head-left">
+      <div class="iconfont">&#xe612;</div>  
+    </div>  
+    <span class="title">实战课程</span>
+    <div class="head-right">
+      <div class="iconfont">&#xe622;</div>  
+    </div>
+  </div> 
+  <div class="banner">
+    <img src="http://p0.meituan.net/codeman/33ff80dc00f832d697f3e20fc030799560495.jpg" />
+    <ul>
+      <li class="swiper"></li>
+      <li class="swiper"></li>
+      <li class="swiper current-swiper"></li>
+    </ul>
+  </div> 
+  <div class="tags">
+    <div class="tag">
+       <p>全部</p>
+    </div>
+    <div class="tag">
+        <p class="tag-current">前端开发</p>
+    </div>
+    <div class="tag">
+        <p>后端开发</p>
+    </div>
+    <div class="tag">
+        <p>移动开发</p>
+    </div>
+    <div class="tag">
+        <p>数据库</p>
+    </div>
+    <div class="tag">
+        <p>运维&测试</p>
+    </div>  
+  </div>
+</body>
+</html>
